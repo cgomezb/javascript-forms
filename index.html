@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Forms</title>
+  </head>
+
+  <body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="username" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="email@domain.com" required>
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" placeholder="age" min="0" max="200" step="5" required>
+      </div>
+
+      <div>
+        <label for="birthDate">BirthDate</label>
+        <input type="date" name="birthDate" min="2019-10-01" max="2020-01-01">
+      </div>
+
+      <div>
+        Favorite Food
+        <div>
+          <label for="banana">Banana</label>
+          <input type="checkbox" name="banana">
+        </div>
+        <div>
+          <label for="apple">Apple</label>
+          <input type="checkbox" name="apple">
+        </div>
+      </div>
+
+      <div>
+        Gender
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male">
+        </div>
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female">
+        </div>
+      </div>
+
+      <div>
+        <label for="eyeColor">Eye Color</label>
+        <select name="eyeColor" multiple>
+          <option value="green">Green</option>
+          <option label="Blue" value="blue"></option>
+          <option label="Brown" value="brown"></option>
+        </select>
+      </div>
+
+      <div>
+        <label for="bio">Bio</label>
+        <textarea name="bio">My name is...</textarea>
+      </div>
+      
+      <input type="hidden" name="hidden" value="This is a hidden value...">
+
+      <div>
+        <label for="file">File</label>
+        <input type="file" name="file">
+      </div>
+
+      <div>
+        <label for="phone">Phone Number (XXX-XXX-XXXX)</label>
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+      </div>
+
+      <div>
+        <label for="url">Url</label>
+        <input type="url" name="url" placeholder="https://example.com" pattern="https://.*" size="30">
+      </div>
+
+      <div>
+        <label for="color">Color</label>
+        <input type="color" name="color">
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" required>
+      </div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+
+</html>
