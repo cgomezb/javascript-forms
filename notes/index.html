@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="styles.css">    
+  </head>
+
+  <body>
+    <div class="note-container">
+      <div class="note-form">
+        <form id="notes-form">
+          <div class="note">
+            <label for="description">Note*</label>
+            <input type="text" id="description" name="description" placeholder="Note" maxlength="45" required/>
+          </div>
+          <div class="color">
+            <label for="color">Color</label>
+            <select id="color" required>
+              <option value="">Select an option</option>
+              <option value="green">green</option>
+              <option value="red">red</option>
+              <option value="orange">orange</option>
+              <option value="blue">blue</option>
+            </select>
+          </div>
+          <div class="actions">
+            <button type="reset">Reset</button>
+            <button type="submit">Save</button>
+          </div>
+        </form>
+      </div>
+      <div class="note-list">
+      </div>
+    </div>
+  </body>
+
+  <script type="module" src="script.js"></script>
+</html>

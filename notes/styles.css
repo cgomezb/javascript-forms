@@ -1,0 +1,26 @@
+.note-form {
+  padding: 20px;
+}
+
+form div {
+  padding: 10px;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+input, select {
+  width: 200px;
+}
+
+.note-list {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.note-list div {
+  padding: 15px;
+}
